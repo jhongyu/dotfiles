@@ -1,8 +1,23 @@
-import:
-  - ~/.config/alacritty/themes/themes/catppuccin_latte.yaml
+live_config_reload: true
 
-#shell:
-# program: /opt/homebrew/bin/fish
+# env:
+#   TERM: xterm-256color
+
+window:
+  padding:
+    x: 20
+    y: 22
+  decorations: transparent
+  dimensions:
+    columns: 106
+    lines: 25
+  opacity: 1
+
+scrolling:
+  # 回滚缓冲区中的最大行数,指定“0”将禁用滚动。
+  history: 100000
+  # 滚动行数
+  multiplier: 3
 
 font:
   normal:
@@ -25,46 +40,52 @@ font:
     x: 0
     y: 3
 
-window:
-  padding:
-    x: 20
-    y: 22
-  decorations: transparent
-  dimensions:
-    columns: 106
-    lines: 25
-  opacity: 1
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: false
 
-env:
-  TERM: xterm-256color
+# Colors (Tokyo Night: Storm variant)
+# Source: https://github.com/zatchheems/tokyo-night-alacritty-theme
+colors:
+  # Default colors
+  primary:
+    background: '0x24283b'
+    foreground: '0xa9b1d6'
 
-scrolling:
-  # 回滚缓冲区中的最大行数,指定“0”将禁用滚动。
-  history: 100000
-  # 滚动行数
-  multiplier: 3
+  # Normal colors
+  normal:
+    black:   '0x32344a'
+    red:     '0xf7768e'
+    green:   '0x9ece6a'
+    yellow:  '0xe0af68'
+    blue:    '0x7aa2f7'
+    magenta: '0xad8ee6'
+    cyan:    '0x449dab'
+    white:   '0x9699a8'
+
+  # Bright colors
+  bright:
+    black:   '0x444b6a'
+    red:     '0xff7a93'
+    green:   '0xb9f27c'
+    yellow:  '0xff9e64'
+    blue:    '0x7da6ff'
+    magenta: '0xbb9af7'
+    cyan:    '0x0db9d7'
+    white:   '0xacb0d0'
+
+selection:
+  save_to_clipboard: true
 
 cursor:
   style:
     shape: Underline
     blinking: on
 
-# 如果为‘true’，则使用亮色变体绘制粗体文本。
-draw_bold_text_with_bright_colors: false
-
-selection:
-  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
-  save_to_clipboard: true
-
-live_config_reload: true
-
 key_bindings:
   - { key: U, mods: Command, action: ScrollPageUp }
   - { key: D, mods: Command, action: ScrollPageDown }
   - { key: R, mods: Command, mode: ~Vi|~Search, chars: "\x0c" }
   - { key: R, mods: Command, mode: ~Vi|~Search, action: ClearHistory }
-  - { key: W, mods: Command, action: Hide }
-  - { key: W, mods: Command|Shift, action: Quit }
   - { key: N, mods: Command, action: SpawnNewInstance }
   - { key: T, mods: Command, action: CreateNewWindow }
   - { key: Left, mods: Alt, chars: "\x1bb" } # Skip word left
