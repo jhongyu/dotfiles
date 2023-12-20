@@ -1,5 +1,9 @@
 import:
-  - ~/.config/alacritty/tokyonight.yml
+  #- ~/.config/alacritty/tokyonight.yml
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+  #- ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  #- ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
+  #- ~/.config/alacritty/catppuccin/catppuccin-latte.yml
 
 live_config_reload: true
 
@@ -52,7 +56,7 @@ selection:
 cursor:
   style:
     shape: Underline
-    blinking: on
+    blinking: On
 
 key_bindings:
   - { key: U, mods: Command, action: ScrollPageUp }
