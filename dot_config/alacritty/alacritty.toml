@@ -1,0 +1,120 @@
+import = [
+  "~/.config/alacritty/catppuccin-mocha.toml"
+  # "~/.config/alacritty/tokyonight/tokyonight_storm.toml"
+]
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[cursor.style]
+blinking = "On"
+shape = "Underline"
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "CaskaydiaCove NF"
+style = "Bold"
+
+[font.bold_italic]
+family = "CaskaydiaCove NF"
+style = "Bold Italic"
+
+[font.glyph_offset]
+x = 0
+y = 3
+
+[font.italic]
+family = "CaskaydiaCove NF"
+style = "Italic"
+
+[font.normal]
+family = "CaskaydiaCove NF"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 9
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "U"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "D"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\f"
+key = "R"
+mode = "~Vi|~Search"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "ClearHistory"
+key = "R"
+mode = "~Vi|~Search"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key = "T"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0001"
+key = "Left"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0005"
+key = "Right"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001B\u007F"
+key = "Back"
+mods = "Alt"
+
+[scrolling]
+history = 100000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true
+
+[window]
+decorations = "transparent"
+opacity = 1
+
+[window.dimensions]
+columns = 106
+lines = 25
+
+[window.padding]
+x = 20
+y = 22
