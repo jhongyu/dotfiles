@@ -3,7 +3,6 @@ function update
   and echo "[update] Homebrew"
   and brew update
   and brew upgrade
-  and brew cu -a -y
 
   and echo "[update] tldr"
   and command tldr -u
