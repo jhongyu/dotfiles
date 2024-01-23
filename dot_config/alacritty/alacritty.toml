@@ -4,80 +4,23 @@ import = [
   # "~/.config/alacritty/tokyonight/tokyonight_storm.toml"
 ]
 
-[cursor]
-style = { shape = "Underline", blinking = "On" }
+[window]
+padding = { x = 20, y = 20 }
+option_as_alt = "OnlyLeft"
 
 [font]
-normal = { family = "CaskaydiaCove Nerd Font", style = "Regular" }
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 size = 16.0
 builtin_box_drawing = false
-
-[[keyboard.bindings]]
-action = "ScrollPageUp"
-key = "U"
-mods = "Command"
-
-[[keyboard.bindings]]
-action = "ScrollPageDown"
-key = "D"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\f"
-key = "R"
-mode = "~Vi|~Search"
-mods = "Command"
-
-[[keyboard.bindings]]
-action = "ClearHistory"
-key = "R"
-mode = "~Vi|~Search"
-mods = "Command"
-
-[[keyboard.bindings]]
-action = "SpawnNewInstance"
-key = "N"
-mods = "Command"
-
-[[keyboard.bindings]]
-action = "CreateNewWindow"
-key = "T"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Bb"
-key = "Left"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Bf"
-key = "Right"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u0001"
-key = "Left"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0005"
-key = "Right"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0015"
-key = "Back"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001B\u007F"
-key = "Back"
-mods = "Alt"
 
 [selection]
 save_to_clipboard = true
 
-[window]
-decorations = "transparent"
-padding = { x = 20, y = 20 }
+[cursor]
+style = { shape = "Underline", blinking = "On" }
 
+[keyboard]
+bindings = [
+  { key = "U", mods = "Command", mod = "~Vi|Search", action = "ScrollPageUp" },
+  { key = "D", mods = "Command", mod = "~Vi|Search", action = "ScrollPageDown" },
+]
