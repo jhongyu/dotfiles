@@ -1,5 +1,6 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    export (envsubst < .env)
+
     abbr --add fix sudo xattr -r -d com.apple.quarantine
 
     eval (/opt/homebrew/bin/brew shellenv)
@@ -10,10 +11,9 @@ if status is-interactive
     zoxide init fish | source
 
     # pnpm
-    set -gx PNPM_HOME "/Users/jhy/Library/pnpm"
+    set -gx PNPM_HOME /Users/jhy/Library/pnpm
     if not string match -q -- $PNPM_HOME $PATH
-      set -gx PATH "$PNPM_HOME" $PATH
+        set -gx PATH "$PNPM_HOME" $PATH
     end
     # pnpm end
 end
-
