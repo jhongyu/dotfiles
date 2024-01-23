@@ -21,6 +21,6 @@ style = { shape = "Underline", blinking = "On" }
 
 [keyboard]
 bindings = [
-  { key = "U", mods = "Command", mod = "~Vi|Search", action = "ScrollPageUp" },
-  { key = "D", mods = "Command", mod = "~Vi|Search", action = "ScrollPageDown" },
+  { key = "U", mods = "Command", mode = "~Vi|Search", action = "ScrollPageUp" },
+  { key = "D", mods = "Command", mode = "~Vi|Search", action = "ScrollPageDown" },
 ]
