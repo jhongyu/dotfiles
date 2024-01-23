@@ -5,6 +5,7 @@ import = [
 ]
 
 [window]
+decorations = "Transparent"
 padding = { x = 20, y = 20 }
 option_as_alt = "OnlyLeft"
 
