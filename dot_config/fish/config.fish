@@ -1,6 +1,4 @@
 if status is-interactive
-    export (envsubst < .env)
-
     abbr --add fix sudo xattr -r -d com.apple.quarantine
 
     eval (/opt/homebrew/bin/brew shellenv)
