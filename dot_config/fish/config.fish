@@ -9,19 +9,16 @@ if status is-interactive
     abbr --add gco git checkout
     abbr --add gcb git checkout -b
     abbr --add gcB git checkout -B
-    abbr --add gcm git checkout $(git_main_brance)
     abbr --add gcmsg git commit --message
     abbr --add glg git log --stat
     abbr --add gl git pull
     abbr --add gp git push
     abbr --add gpd git push --dry-run
-    abbr --add gpsup git push --set-upstream origin $(git_current_branch)
     abbr --add gsh git show
     abbr --add gst git status
     abbr --add gss git status --short
     abbr --add gsw git switch
     abbr --add gswc git switch -c
-    abbr --add gswm git switch $(git_main_brance)
 
     eval (/opt/homebrew/bin/brew shellenv)
 
