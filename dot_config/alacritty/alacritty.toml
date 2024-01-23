@@ -18,8 +18,3 @@ save_to_clipboard = true
 
 [cursor]
 style = { shape = "Underline", blinking = "On" }
-
-[keyboard]
-bindings = [
-  { key = "Space", mods = "Control|Shift", mode = "~Search", action = "ToggleViMode" }
-]
