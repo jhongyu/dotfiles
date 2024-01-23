@@ -3,41 +3,14 @@ import = [
   "~/.config/alacritty/catppuccin-latte.toml"
   # "~/.config/alacritty/tokyonight/tokyonight_storm.toml"
 ]
-live_config_reload = true
 
-[colors]
-draw_bold_text_with_bright_colors = false
-
-[cursor.style]
-blinking = "On"
-shape = "Underline"
+[cursor]
+style = { shape = "Underline", blinking = "On" }
 
 [font]
+normal = { family = "CaskaydiaCove Nerd Font", style = "Regular" }
 size = 16.0
-
-[font.bold]
-family = "CaskaydiaCove NF"
-style = "Bold"
-
-[font.bold_italic]
-family = "CaskaydiaCove NF"
-style = "Bold Italic"
-
-[font.glyph_offset]
-x = 0
-y = 3
-
-[font.italic]
-family = "CaskaydiaCove NF"
-style = "Italic"
-
-[font.normal]
-family = "CaskaydiaCove NF"
-style = "Regular"
-
-[font.offset]
-x = 0
-y = 9
+builtin_box_drawing = false
 
 [[keyboard.bindings]]
 action = "ScrollPageUp"
@@ -101,21 +74,10 @@ chars = "\u001B\u007F"
 key = "Back"
 mods = "Alt"
 
-[scrolling]
-history = 100000
-multiplier = 3
-
 [selection]
 save_to_clipboard = true
 
 [window]
 decorations = "transparent"
-opacity = 1
+padding = { x = 20, y = 20 }
 
-[window.dimensions]
-columns = 106
-lines = 25
-
-[window.padding]
-x = 20
-y = 22
