@@ -129,8 +129,8 @@ alt-w = 'workspace W'
 alt-x = 'workspace X'
 alt-y = 'workspace Y'
 alt-z = 'workspace Z'
-alt-leftSquareBracket = 'workspace --wrap-around next'
-alt-rightSquareBracket = 'workspace --wrap-around prev'
+alt-leftSquareBracket = 'workspace --wrap-around prev'
+alt-rightSquareBracket = 'workspace --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands.html#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
