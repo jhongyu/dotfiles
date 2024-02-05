@@ -61,6 +61,10 @@ run = 'move-node-to-workspace N'
 if.app-id = 'org.alacritty'
 run = 'move-node-to-workspace T'
 
+[[on-window-detected]]
+if.app-id = 'org.qbittorrent.qBittorrent'
+run = 'move-node-to-workspace Q'
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide.html#binding-modes
 # 'main' binding mode must be always presented
