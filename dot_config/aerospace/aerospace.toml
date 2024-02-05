@@ -65,6 +65,14 @@ run = 'move-node-to-workspace T'
 if.app-id = 'org.qbittorrent.qBittorrent'
 run = 'move-node-to-workspace Q'
 
+[[on-window-detected]]
+if.app-id = 'org.apple.finder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.systempreferences'
+run = ['layout floating', 'move-node-to-workspace S']
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide.html#binding-modes
 # 'main' binding mode must be always presented
