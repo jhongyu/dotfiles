@@ -67,7 +67,7 @@ run = 'move-node-to-workspace Q'
 
 [[on-window-detected]]
 if.app-id = 'org.apple.finder'
-run = 'layout floating'
+run = ['layout floating', 'move-node-to-workspace F']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.systempreferences'
