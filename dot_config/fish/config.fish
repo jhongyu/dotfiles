@@ -1,5 +1,6 @@
 if status is-interactive
     abbr --add fix sudo xattr -r -d com.apple.quarantine
+
     abbr --add ga git add
     abbr --add gaa git add --all
     abbr --add gb git branch
@@ -19,6 +20,12 @@ if status is-interactive
     abbr --add gss git status --short
     abbr --add gsw git switch
     abbr --add gswc git switch -c
+
+    abbr --add ls eza
+    abbr --add ll eza -l
+    abbr --add la eza -la
+    abbr --add lf eza -lf
+    abbr --add ld eza -lD
 
     eval (/opt/homebrew/bin/brew shellenv)
 
