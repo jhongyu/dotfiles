@@ -82,6 +82,10 @@ if.app-id = 'com.microsoft.VSCode'
 run = 'move-node-to-workspace V'
 
 [[on-window-detected]]
+if.app-id = 'co.noteplan.NotePlan-setapp'
+run = 'move-node-to-workspace P'
+
+[[on-window-detected]]
 if.app-id = 'com.apple.finder'
 run = ['layout floating', 'move-node-to-workspace F']
 
