@@ -54,6 +54,10 @@ gaps.outer.right =      0
 indent-for-nested-containers-with-the-same-orientation = 30
 
 [[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
 if.app-id = 'net.kovidgoyal.calibre'
 run = 'move-node-to-workspace C'
 
