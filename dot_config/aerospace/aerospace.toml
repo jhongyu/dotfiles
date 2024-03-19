@@ -54,40 +54,44 @@ gaps.outer.right =      0
 indent-for-nested-containers-with-the-same-orientation = 30
 
 [[on-window-detected]]
-if.app-id = 'com.ranchero.NetNewsWire-Evergreen'
-run = 'move-node-to-workspace N'
-
-[[on-window-detected]]
-if.app-id = 'com.tencent.xinWeChat'
-run = 'move-node-to-workspace W'
+if.app-id = 'net.kovidgoyal.calibre'
+run = 'move-node-to-workspace C'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
 run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
-if.app-id = 'org.alacritty'
-run = 'move-node-to-workspace T'
-
-[[on-window-detected]]
-if.app-id = 'org.qbittorrent.qBittorrent'
-run = 'move-node-to-workspace Q'
+if.app-id = 'com.ranchero.NetNewsWire-Evergreen'
+run = 'move-node-to-workspace N'
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
 run = 'move-node-to-workspace O'
 
 [[on-window-detected]]
-if.app-id = 'com.microsoft.VSCode'
-run = 'move-node-to-workspace V'
-
-[[on-window-detected]]
 if.app-id = 'co.noteplan.NotePlan-setapp'
 run = 'move-node-to-workspace P'
 
 [[on-window-detected]]
+if.app-id = 'org.qbittorrent.qBittorrent'
+run = 'move-node-to-workspace Q'
+
+[[on-window-detected]]
 if.app-id = 'com.hogbaysoftware.TaskPaper3-setapp'
 run = 'move-node-to-workspace R'
+
+[[on-window-detected]]
+if.app-id = 'org.alacritty'
+run = 'move-node-to-workspace T'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace V'
+
+[[on-window-detected]]
+if.app-id = 'com.tencent.xinWeChat'
+run = 'move-node-to-workspace W'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
