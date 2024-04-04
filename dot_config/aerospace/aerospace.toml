@@ -81,8 +81,6 @@ run = 'move-node-to-workspace P'
 if.app-id = 'org.qbittorrent.qBittorrent'
 run = 'move-node-to-workspace Q'
 
-
-
 [[on-window-detected]]
 if.app-id = 'org.alacritty'
 run = 'move-node-to-workspace T'
