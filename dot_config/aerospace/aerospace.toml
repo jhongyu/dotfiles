@@ -94,6 +94,10 @@ if.app-id = 'com.tencent.xinWeChat'
 run = 'move-node-to-workspace W'
 
 [[on-window-detected]]
+if.app-id = 'com.kagi.kagimacOS'
+run = ['layout floating']
+
+[[on-window-detected]]
 if.app-id = 'com.apple.finder'
 run = ['layout floating']
 
