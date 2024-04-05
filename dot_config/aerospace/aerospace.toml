@@ -58,6 +58,10 @@ if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
+if.app-id = 'com.kagi.kagimacOS'
+run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
 if.app-id = 'net.kovidgoyal.calibre'
 run = 'move-node-to-workspace C'
 
@@ -92,10 +96,6 @@ run = 'move-node-to-workspace V'
 [[on-window-detected]]
 if.app-id = 'com.tencent.xinWeChat'
 run = 'move-node-to-workspace W'
-
-[[on-window-detected]]
-if.app-id = 'com.kagi.kagimacOS'
-run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
