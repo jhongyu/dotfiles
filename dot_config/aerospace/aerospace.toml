@@ -113,6 +113,10 @@ run = ['layout floating']
 if.app-id = 'com.macpaw.CleanMyMac-setapp'
 run = ['layout floating']
 
+[[on-window-detected]]
+if.app-id = 'net.ankiweb.dtop'
+run = ['layout floating']
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide.html#binding-modes
 # 'main' binding mode must be always presented
