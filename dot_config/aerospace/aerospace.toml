@@ -49,8 +49,16 @@ gaps.outer.top =        0
 gaps.outer.right =      0
 
 [[on-window-detected]]
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = ['layout tiles', 'move-node-to-workspace 1']
 
 [[on-window-detected]]
 if.app-id = 'com.kagi.kagimacOS'
@@ -58,7 +66,7 @@ run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.calibre'
-run = ['layout floating', 'move-node-to-workspace C']
+run = 'move-node-to-workspace C'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
@@ -86,39 +94,11 @@ run = 'move-node-to-workspace T'
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
-run = 'move-node-to-workspace V'
+run = ['layout tiles', 'move-node-to-workspace V']
 
 [[on-window-detected]]
 if.app-id = 'com.tencent.xinWeChat'
 run = 'move-node-to-workspace W'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.finder'
-run = ['layout floating']
-
-[[on-window-detected]]
-if.app-id = 'com.hogbaysoftware.TaskPaper3-setapp'
-run = ['layout floating']
-
-[[on-window-detected]]
-if.app-id = 'com.apple.systempreferences'
-run = ['layout floating']
-
-[[on-window-detected]]
-if.app-id = 'com.macpaw.CleanMyMac-setapp'
-run = ['layout floating']
-
-[[on-window-detected]]
-if.app-id = 'net.ankiweb.dtop'
-run = ['layout floating']
-
-[[on-window-detected]]
-if.app-id = 'com.setapp.DesktopClient'
-run = ['layout floating']
-
-[[on-window-detected]]
-if.app-id = 'com.apple.AppStore'
-run = ['layout floating']
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide.html#binding-modes
