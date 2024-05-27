@@ -94,7 +94,7 @@ run = 'move-node-to-workspace Q'
 
 [[on-window-detected]]
 if.app-id = 'org.alacritty'
-run = 'move-node-to-workspace T'
+run = ['layout tiling', 'move-node-to-workspace T']
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
