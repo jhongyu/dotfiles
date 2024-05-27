@@ -61,12 +61,16 @@ if.app-id = 'com.google.Chrome'
 run = ['layout tiling', 'move-node-to-workspace 1']
 
 [[on-window-detected]]
+if.app-id = 'com.calibre-ebook.ebook-viewer'
+run = ['layout tiling', 'move-node-to-workspace 1']
+
+[[on-window-detected]]
 if.app-id = 'com.kagi.kagimacOS'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.calibre'
-run = 'move-node-to-workspace C'
+run = ['layout tiling', 'move-node-to-workspace C']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
