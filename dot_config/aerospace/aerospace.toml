@@ -57,8 +57,13 @@ if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
+if.app-name-regex-substring = 'Chrome'
+check-further-callbacks = true
+run = 'layout tiling'
+
+[[on-window-detected]]
 if.app-id = 'com.google.Chrome'
-run = ['layout tiling', 'move-node-to-workspace 1']
+run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-id = 'com.calibre-ebook.ebook-viewer'
