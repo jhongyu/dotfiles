@@ -8,6 +8,6 @@ function update
   and command tldr -u
 
   and echo "[update] Squirrel"
-  ~/plum/rime-install iDvel/rime-ice:others/recipes/full
+  ~/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts
   and /Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload
 end
