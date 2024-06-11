@@ -1,4 +1,5 @@
 if status is-interactive
+    abbr --add chea chezmoi edit --apply
     abbr --add fix sudo xattr -r -d com.apple.quarantine
 
     abbr --add ga git add
