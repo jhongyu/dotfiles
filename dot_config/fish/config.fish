@@ -1,4 +1,5 @@
 if status is-interactive
+    abbr --add restic_database restic -r rclone:onedrive:Database --password-file ~/restic_pwd
     abbr --add chea chezmoi edit --apply
     abbr --add fix sudo xattr -r -d com.apple.quarantine
 
