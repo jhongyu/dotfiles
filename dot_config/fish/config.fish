@@ -1,4 +1,6 @@
 if status is-interactive
+    set -gx RESTIC_PASSWORD (bw get item 7fb38c5d-4301-4ae9-96bf-b1bd002e972a | jq '.notes')
+
     abbr --add chea chezmoi edit --apply
     abbr --add fix sudo xattr -r -d com.apple.quarantine
 
