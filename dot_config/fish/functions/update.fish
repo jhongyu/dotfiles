@@ -10,8 +10,6 @@ function update
 
   and download_manuals
 
-  and download_wiki
-
   and echo "[update] Squirrel"
   ~/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts
   and /Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload
@@ -24,11 +22,5 @@ function download_manuals
   for i in (seq (count $urls))
     curl $urls[$i] --output $filenames[$i]
   end
-  cd ~
-end
-
-function download_wiki
-  cd ~/Database/Wiki
-  git clone https://github.com/gorhill/uBlock.wiki.git
   cd ~
 end
