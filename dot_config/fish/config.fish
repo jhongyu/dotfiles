@@ -1,6 +1,8 @@
 if status is-interactive
     abbr --add restic_database restic -r rclone:onedrive:Database --password-file ~/restic_pwd
+
     abbr --add chea chezmoi edit --apply
+
     abbr --add fix sudo xattr -r -d com.apple.quarantine
 
     abbr --add ga git add
@@ -31,7 +33,7 @@ if status is-interactive
 
     eval (/opt/homebrew/bin/brew shellenv)
 
-    fnm env --use-on-cd | source
+    fnm env --use-on-cd --version-file-strategy=recursive --shell fish | source
     pyenv init - | source
     starship init fish | source
     zoxide init fish | source
@@ -43,3 +45,6 @@ if status is-interactive
     end
     # pnpm end
 end
+
+# Created by `pipx` on 2024-08-18 10:50:54
+set PATH $PATH /Users/jhy/.local/bin
