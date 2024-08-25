@@ -8,6 +8,7 @@ function update
   and echo "[update] tldr"
   and command tldr -u
 
+  and echo "[download] manuals"
   and download_manuals
 
   and echo "[update] Squirrel"
