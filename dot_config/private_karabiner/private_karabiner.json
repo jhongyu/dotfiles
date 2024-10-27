@@ -88,7 +88,8 @@
                     "from": { "key_code": "f4" },
                     "to": [{ "key_code": "f17" }]
                 }
-            ]
+            ],
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
     ]
 }
