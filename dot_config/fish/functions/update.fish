@@ -12,7 +12,7 @@ function update
   and download_manuals
 
   and echo "[update] Squirrel"
-  ~/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts
+  ~/plum/rime-install iDvel/rime-ice:others/recipes/full
   and /Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload
 end
 
