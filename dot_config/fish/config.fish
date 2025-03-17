@@ -37,6 +37,7 @@ if status is-interactive
     pyenv init - | source
     starship init fish | source
     zoxide init fish | source
+    fzf --fish | source
 
     # pnpm
     set -gx PNPM_HOME /Users/jhy/Library/pnpm
@@ -48,3 +49,7 @@ end
 
 # Created by `pipx` on 2024-08-18 10:50:54
 set PATH $PATH /Users/jhy/.local/bin
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
