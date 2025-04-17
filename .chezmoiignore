@@ -2,3 +2,6 @@
 .config/aerospace
 .config/karabiner
 {{- end}}
+
+.config/alacritty
+.config/lsd
