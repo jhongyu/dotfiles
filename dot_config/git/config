@@ -1,14 +1,9 @@
 [core]
-  editor = code --wait
+	editor = nvim
   excludesFile = .gitignore
-[diff]
-  tool = vscode
-[difftool "vscode"]
-  cmd = code --wait --diff $LOCAL $REMOTE
+	autocrlf = input
 [merge]
-  tool = vscode
-[mergetool "vscode"]
-  cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+	tool = nvimdiff
 [user]
 	name = jihongyu
 	email = jhy172691619@gmail.com
@@ -17,11 +12,6 @@
 	defaultBranch = main
 [pull]
 	ff = only
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
 [credential]
 	helper = 
 	helper = /usr/local/share/gcm-core/git-credential-manager

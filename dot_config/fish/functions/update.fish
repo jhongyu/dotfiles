@@ -10,49 +10,9 @@ function update
     and echo "[download] manuals"
     and download_manuals
 
-    and echo "[download] thumbfast"
-    and download_thumbfast
-
-    and echo "[download] playlistmanager"
-    and download_playlistmanager
-
-    and echo "[download] memo"
-    and download_memo
-
-    and echo "[download] autoload"
-    and download_autoload
-
     and echo "[update] Squirrel"
     ~/plum/rime-install iDvel/rime-ice:others/recipes/full
     and /Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload
-end
-
-function download_thumbfast
-    cd ~/.config/mpv/scripts
-    set -l urls https://raw.githubusercontent.com/po5/thumbfast/refs/heads/vanilla-osc/player/lua/osc.lua https://raw.githubusercontent.com/po5/thumbfast/refs/heads/master/thumbfast.lua
-    set -l etagfile osc.txt thumbfast.txt
-    for i in (seq (count $urls))
-        curl --remote-name $urls[$i] --etag-compare $etagfile[$i] --etag-save $etagfile[$i]
-    end
-    cd
-end
-
-function download_playlistmanager
-    cd ~/.config/mpv/scripts
-    curl --remote-name https://raw.githubusercontent.com/jonniek/mpv-playlistmanager/refs/heads/master/playlistmanager.lua --etag-compare playlistmanager.txt --etag-save playlistmanager.txt
-    cd
-end
-
-function download_memo
-    cd ~/.config/mpv/scripts
-    curl --remote-name https://raw.githubusercontent.com/po5/memo/refs/heads/master/memo.lua --etag-compare memo.txt --etag-save memo.txt
-    cd
-end
-
-function download_autoload
-    cd ~/.config/mpv/scripts
-    curl --remote-name https://raw.githubusercontent.com/mpv-player/mpv/refs/heads/master/TOOLS/lua/autoload.lua --etag-compare autoload.txt --etag-save autoload.txt
-    cd
 end
 
 function download_manuals
