@@ -10,4 +10,3 @@
 {{- end}}
 
 .config/alacritty
-.config/lsd
