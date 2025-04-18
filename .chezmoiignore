@@ -1,6 +1,12 @@
 {{- if ne .chezmoi.os "darwin" }}
 .config/aerospace
 .config/karabiner
+.config/fish/conf.d/01-homebrew.fish
+.config/fish/conf.d/fnm.fish
+.config/fish/conf.d/mac-*.fish
+.config/fish/conf.d/oh-my-posh.fish
+.config/fish/conf.d/pyenv.fish
+.config/fish/conf.d/rustup.fish
 {{- end}}
 
 .config/alacritty
