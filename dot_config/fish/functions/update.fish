@@ -9,10 +9,6 @@ function update
 
     and echo "[download] manuals"
     and download_manuals
-
-    and echo "[update] Squirrel"
-    ~/plum/rime-install iDvel/rime-ice:others/recipes/full
-    and /Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload
 end
 
 function download_manuals
