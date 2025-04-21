@@ -37,3 +37,8 @@ refreshPeriod = "168h"
 type = "file"
 url = "https://raw.githubusercontent.com/po5/thumbfast/refs/heads/master/thumbfast.conf"
 refreshPeriod = "168h"
+
+[".config/bat/themes/Catppuccin Latte.tmTheme"]
+type = "file"
+url = "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme"
+refreshPeriod = "168h"
